@@ -1,0 +1,531 @@
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+.modal-backdrop {
+    opacity:.9 !important;
+}
+
+.menuToggle {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: black;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: rgba(255,255,255,0.6);
+}
+
+.menuToggle:hover {
+	color: black;
+	background: rgba(255,255,255,.8);
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/field2.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#parallax {
+background: url('../img/fieldparallax.png') no-repeat center top;
+  margin-top: 0px;
+  padding-top:120px;
+  text-align:center;
+  background-position: center center;
+  min-height: 600px;
+  background-size: cover;
+  z-index: 2;
+}
+
+.mouse-bg {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+/*#logo {
+  margin-top: 0px;
+  padding-top:120px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 400px;
+  background-size: cover;
+  z-index: 3;
+  position: absolute;
+}*/
+
+#logoimage {
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+/*  background: url('../img/katielogo.png');*/
+}
+
+/* What I Do Section */
+.proc {
+	text-align: center;
+  width: 33.333%;
+  float: left;
+  margin: 0;
+  color: #333333;
+}
+
+.skill {
+	padding: 80px 5px 5px 5px;
+  border: 1px solid gray;
+  height: 335px;
+}
+
+.skill.one {
+	border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.skill.two {
+	border-top: 1px solid white;
+}
+
+.skill.three {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+ }
+
+.skill.four {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.skill.five {
+  border-bottom: 1px solid white;
+}
+
+.skill.six {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+#whatidocontainer {
+  text-align: center;
+  margin: 180px auto;
+
+}
+
+#whatidocontainer h3 {
+	padding: 8px;
+}
+
+#whatidowrap {
+	overflow: hidden;
+  z-index: 3;
+  background: white;
+  position: relative;
+}
+
+/*What I do Responsive Design*/
+
+@media screen and (max-width: 500px) {
+   .proc {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.proc {
+  width: 50%;
+  float: left;
+  margin: 0px auto;
+}
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 800px){
+.skill.one {
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+}
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.skill.two {
+  border-right: 0px;
+  border-top: 0px;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.proc.three {
+  border: 0px;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.proc.four {
+  border-top: 0px;
+  border-left: 1px solid gray;
+  border-bottom: 0px;
+  border-right: 0px;
+ }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.proc.five {
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+}
+
+/*Projects/Recent Work*/
+
+.desc {
+	margin-top: 25px;
+
+}
+
+.img-responsive {
+  height: 350px;
+  width: auto;
+}
+
+
+#portfoliowrap i {
+	font-size: 50px;
+}
+
+
+#portfoliowrap .proc:hover {
+	background-color: #eee;
+	border-bottom: solid 2px #2f2f2f
+}
+
+.portfolio {
+	background-image: url(../img/mandalatree2.jpg);
+  background-size: cover;
+}
+
+#projectwrap {
+	margin-top: 60px;
+	margin-bottom: 130px;
+}
+
+.container h1 {
+	margin-bottom: 40px;
+}
+
+
+.workhover {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255,255,255,0.9);
+  vertical-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.workhover:hover {
+opacity: 1;
+transition: all 1s ease;
+}
+
+.img-responsive.workhover:hover {
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+}
+
+/*---------------*/
+/***** Chico *****/
+/*---------------*/
+
+/*figure.effect-chico img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+  padding: 3em;
+}
+
+figure.effect-chico figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+  padding: 20% 0 20px 0;
+}
+
+figure.effect-chico p {
+  margin: 0 auto;
+  max-width: 200px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+*/
+
+
+
+/* Gallery Configuration */
+.photo-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: #2f2f2f;
+
+}
+.project .overlay {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+/*.project:hover .photo-wrapper {
+  background-color: gray;
+	background-image:url(../img/zoom.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+}
+.project:hover .photo {
+  opacity: 10;
+  opacity: 0.1;
+
+}*/
+.project:hover .overlay {
+  opacity: 100;
+  opacity: 1;
+}
+
+
+
+
+/* Separator About - Parallax Section */
+.sep {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+}
+.about {
+	background-image: url(../img/mandalatree2.jpg);
+  background-size: cover;
+}
+
+
+/* Service Wrap */
+#servicewrap {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 150px;
+}
+
+#servicewrap h2 {
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+
+/*about me box*/
+
+#aboutmebox {
+  margin: 40px;
+  border: 2px solid black;
+  text-align: justify;
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+     display: table;
+}
+
+
+
+
+
+
+/* Testimonials Wrap */
+/*#testimonials {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	background-color: #f3f3f3;
+}*/
+
+
+.socialicons {
+  padding: 10% 0%;
+  border-top: 1px solid white;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+
+.socialicons i {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+
+}
+
+.fa-envelope-o:hover::before {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+
+}
+
+.fa-linkedin:hover::before {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+
+}
+
+.fa-github:hover::before {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+
+}
+
+.fa-twitter:hover::before {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+
+}
+
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+  padding: 5% 0%;
+  color: white;
+  letter-spacing: 3px;
+}
+/*FOOTER*/
+
+#contactwrap {
+	background-color: white;
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+/*
+#contactwrap p {
+	color: #f2f2f2;
+}
+
+#contactwrap small {
+	font-size: 13px;
+}*/
+
+.contact {
+	background-image: url(../img/contact-sep.jpg);
+}
+
+/*#contactwrap label {
+	color: #f2f2f2;
+	margin-top: 10px;
+}*/
+
+

@@ -1,0 +1,29 @@
+
+
+$(function(){
+  $.stellar({
+    horizontalScrolling: false,
+    verticalOffset: 40
+  });
+});
+
+
+
+$(function() {
+$(".fancybox").fancybox();
+});
+
+
+$(function() {
+$(".shapeshift").shapeshift({
+    minColumns: 3
+});
+});
+
+
+
+
+
+
+
+
