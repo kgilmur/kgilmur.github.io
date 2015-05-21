@@ -429,15 +429,35 @@ figure.effect-chico:hover p {
 
 #aboutmebox {
   margin: 40px;
-  border: 2px solid black;
+  border: 2px solid gray;
   text-align: justify;
      float: none;
      margin-left: auto;
      margin-right: auto;
      display: table;
+    background: url("../img/me.jpg") no-repeat left;
+  background-size: 40% auto;
+  min-height: 400px;
 }
 
+/*#aboutmebox {
+  position: relative;
+  float: left;
+  border: 2px solid gray;
+  background-color: #fff;
+  background: url("../img/me.jpg") no-repeat center center;
+  background-size: 100% auto;
+  width: 50%;
+  height: 100%;
+  transition: all 0.2s ease;
+  border-right: 0px;
+}
+*/
 
+/*#me {
+  border: 2px solid gray;
+
+}*/
 
 
 
@@ -520,7 +540,9 @@ figure.effect-chico:hover p {
 }*/
 
 .contact {
-	background-image: url(../img/contact-sep.jpg);
+	background-image: url(../img/butterfly2.jpg);
+  background-position: top;
+  background-size: 100%;
 }
 
 /*#contactwrap label {
