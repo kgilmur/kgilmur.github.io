@@ -1,5 +1,51 @@
 .gitignore
 
+
+
+<div class="row project">
+
+  <div class="col-lg-4 col-sm-6 col-xs-12 desc">
+    <div class="project-wrapper">
+                <div class="project">
+                        <div class="photo">
+                          <a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
+                          <div class="workhover"></div>
+                          </a>
+                        </div>
+                </div>
+            </div>
+  </div><!-- col-lg-4 -->
+
+  <div class="col-lg-4 col-sm-6 col-xs-12 desc">
+    <div class="project-wrapper">
+                <div class="project">
+                        <div class="photo">
+                          <a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
+                          <div class="workhover"></div>
+                          </a>
+                        </div>
+                </div>
+            </div>
+  </div><!-- col-lg-4 -->
+
+  <div class="col-lg-4 col-sm-6 col-xs-12 desc">
+    <div class="project-wrapper">
+                <div class="project">
+                        <div class="photo">
+                          <a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
+                          <div class="workhover"></div>
+                          </a>
+                        </div>
+                </div>
+            </div>
+  </div><!-- col-lg-4 -->
+
+</div><!-- /row -->
+
+
+
+
+
 $(function(){
   $.stellar({
     horizontalScrolling: false,

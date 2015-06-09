@@ -17,7 +17,8 @@
 
     <script type="text/JavaScript" src="assets/js/shapeshift.js"></script>
 		<script type="text/JavaScript" src="assets/js/mouse.parallax.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Alex+Brush|Great+Vibes' rel='stylesheet' type='text/css'>
+		<script type="text/JavaScript" src="assets/js/parallax.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400|Raleway:100,400,200,300' rel='stylesheet' type='text/css'>
 
   </head>
 
@@ -27,11 +28,11 @@
 <div class="menuToggle fa fa-bars" id="openBtn"></div>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
 <div class="modal-dialog text-center">
-		<ul><a href="#home" class="smoothScroll">Home</a></ul>
-		<ul><a href="#home" class="smoothScroll">What I Do</a></ul>
-		<ul><a href="#home" class="smoothScroll">Projects</a></ul>
-		<ul><a href="#home" class="smoothScroll">About</a></ul>
-		<ul><a href="#home" class="smoothScroll">Contact</a></ul>
+		<ul><a href="#home" class="modallinks smoothScroll" onclick="$('#myModal').modal('hide')">Home</a></ul>
+		<ul><a href="#whatidocontainer" class="modallinks smoothScroll" onclick="$('#myModal').modal('hide')">What I Do</a></ul>
+		<ul><a href="#portfolio" class="modallinks smoothScroll" onclick="$('#myModal').modal('hide')" >Projects</a></ul>
+		<ul><a href="#about" class="modallinks smoothScroll" onclick="$('#myModal').modal('hide')">About</a></ul>
+		<ul><a href="#contact" class="modallinks smoothScroll" onclick="$('#myModal').modal('hide')">Contact</a></ul>
 </div>
 </div>
 
@@ -40,8 +41,7 @@
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
 
-	<div id="parallax" class="mouse-bg"></div>
-	<div id="logo"><img class="img-responsive" src="assets/img/katielogo.png" id="logoimage">
+	<div id="logo"><img class="img-responsive" src="assets/img/katielogo2.png" id="logoimage">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
@@ -50,6 +50,9 @@
 			</div>
 		</div>
 </div>
+	<div id="parallax" class="mouse-bg">
+			<div class="layer" data-depth=".20"><img src="assets/img/starcover10.png"></div>
+	</div>
 
 	</div>
 
@@ -62,35 +65,35 @@
 
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill one">
 					<i class="fa fa-code fa-lg"></i>
-					<h3>Languages</h3>
+					<h2>Languages</h2>
 					<p>HTML5, CSS, Javascript, Ruby, Bootstrap</p>
 				</div>
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill two">
 					<i class="fa fa-wrench fa-lg"></i>
-					<h3>Development Tools</h3>
-					<p>Terminal, Git/Github, JQuery, SWL, PostgreSQL, Sequelize, ActiveRecord, RSpec, Bcrypt, API's, Photoshop</p>
+					<h2>Development Tools</h2>
+					<p>Terminal, Git/Github, JQuery, SWL, PostgreSQL, Sequelize, ActiveRecord, Firebase, RSpec, Bcrypt, API's, Photoshop</p>
 				</div>
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill three">
 					<i class="fa fa-sitemap fa-lg"></i>
-					<h3>Frameworks</h3>
-					<p>Node.js, Express.js, Rails, AngularJS</p>
+					<h2>Frameworks</h2>
+					<p>Node.js, Express.js, Rails, AngularJS, Ionic, Apache Cordova</p>
 				</div>
 
 
 
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill four">
 					<i class="fa fa-stethoscope fa-lg"></i>
-					<h3>Equine Veterinary</h3>
+					<h2>Equine Veterinary</h2>
 					<p>Hyperbaric Oxygen Therapy, Nuclear Scintigraphy, Shockwave Therapy, Radiography, Clinical Research, Laboratory Testing, Reproduction</p>
 				</div>
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill five">
 					<i class="fa fa-heart fa-lg"></i>
-					<h3>Passions</h3>
+					<h2>Passions</h2>
 					<p>Eventing, Dressage, Music, Festivals, Traveling, Meditation, Hiking, Entrepreneurship</p>
 				</div>
 				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1 proc skill six">
 					<i class="fa fa-briefcase fa-lg"></i>
-					<h3>Business Tools</h3>
+					<h2>Business Tools</h2>
 					<p>Account Management, CRM Software, Integration Projects, IT Support, Business Development, Social Business</p>
 				</div>
 
@@ -105,73 +108,119 @@
 
 	<section id="portfolio" name="portfolio"></section>
 	<div id="portfoliowrap">
-		<div class="container" id="projectwrap">
-			<div class="row">
-				<h1 class="text-center">Recent Projects</h1>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 desc">
+		<div id="projectwrap">
+			<div class="row project">
+				<h1 class="recent text-center">Recent Projects</h1>
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
 					<div class="project-wrapper">
 	                    <div class="project">
-	                        <div class="photo-wrapper">
+
 	                            <div class="photo">
-	                            	<a class="fancybox" href="https://doggydates.herokuapp.com/"><img class="img-responsive" src="assets/img/doggydates.jpg" alt="">
+	                            	<a class="fancybox" href="https://doggydates.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/doggylogo2.jpg" alt="">
+	                            	<div class="workhover">
+	                            		<div class="worktext">
+																	<h2>DoggyDates</h2>
+	                            		<p>Search, save, and vote on Seattle dog-friendly restaurants.</p>
+	                            		</div>
+	                            	</div>
+	                            	</a>
+	                            </div>
+
+
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+
+	                            <div class="photo">
+	                            	<a class="fancybox" href="http://schedulacity.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/schedulacity4.jpg" alt="">
+																<div class="workhover">
+																	<div class="worktext">
+	                            		<h2>Schedulacity</h2>
+	                            		<p>Cloud based client management software that allows you to schedule sessions, track attendance, and handle communication.</p>
+	                            		</div>
+																</div>
+	                            	</a>
+	                            </div>
+
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+
+	                            <div class="photo">
+	                            	<a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/link1.jpg" alt="">
+	                            	<div class="workhover">
+	                            		<div class="worktext">
+	                            		<h2>LinkBoard</h2>
+	                            		<p>A Reddit-style application that enables users to post, vote, and comment on noteworthy links</p>
+	                            		</div>
+	                            	</div>
+	                            	</a>
+	                            </div>
+
+
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+
+				</div>
+
+<!-- 			<div class="row project">
+
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+
+	                            <div class="photo">
+	                            	<a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
 	                            	<div class="workhover"></div>
 	                            	</a>
 	                            </div>
-	                            <div class="overlay img-responsive"></div>
-	                        </div>
+
+
 	                    </div>
 	                </div>
-				</div><!-- col-lg-4 -->
+				</div>
 
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 desc">
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
 					<div class="project-wrapper">
 	                    <div class="project">
-	                        <div class="photo-wrapper">
-	                            <div class="photo">
-	                            	<a class="fancybox" href="http://schedulacity.herokuapp.com/"><img class="img-responsive" src="assets/img/schedulacity.jpg" alt="">
-																<div class="workhover"></div>
-	                            	</a>
-	                            </div>
-	                            <div class="overlay img-responsive"></div>
-	                        </div>
-	                    </div>
-	                </div>
-				</div><!-- col-lg-4 -->
 
-			<div class="row mt">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 desc">
-					<div class="project-wrapper">
-	                    <div class="project">
-	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/portfolio/port06.jpg"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt="">
-																<div class="workhover"></div>
-	                            	</a>
-	                            </div>
-	                            <div class="overlay img-responsive"></div>
-	                        </div>
-	                    </div>
-	                </div>
-				</div><!-- col-lg-4 -->
-
-
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 desc">
-					<div class="project-wrapper">
-	                    <div class="project">
-	                        <div class="photo-wrapper">
-	                            <div class="photo">
-	                            	<a class="fancybox" href="https://linkboardapp.herokuapp.com/"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
+	                            	<a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
 	                            	<div class="workhover"></div>
 	                            	</a>
 	                            </div>
-	                            <div class="overlay img-responsive"></div>
-	                        </div>
+
+
 	                    </div>
 	                </div>
-				</div><!-- col-lg-4 -->
+				</div>
 
-			</div><!-- /row -->
-		</div><!--/container -->
+				<div class="col-lg-4 col-sm-6 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+
+	                            <div class="photo">
+	                            	<a class="fancybox" href="https://linkboardapp.herokuapp.com/" target="_blank"><img class="img-responsive" src="assets/img/linkboard.jpg" alt="">
+	                            	<div class="workhover"></div>
+	                            	</a>
+	                            </div>
+
+
+	                    </div>
+	                </div>
+				</div>
+
+			</div> -->
+
 
 	</div><!--/Portfoliowrap -->
 
@@ -183,27 +232,26 @@
 
 
 	<!-- SERVICE SECTION -->
-	<section id="services" name="services"></section>
+	<section id="about" name="about"></section>
 	<div id="servicewrap">
 		<div class="container">
-			<div class="row">
 
 
-<div class="col-lg-8 center-block" id="aboutmebox">
-<div class="col-lg-6">
-	<img id="me">
-</div>
-<div class="col-lg-6">
-	<div class="col-lg-10 col-lg-offset-1">
-	<h2>About Me</h2>
+
+<div class="col-lg-8 col-lg-offset-2" id="aboutmebox">
+
+
+		<img id="me" src="assets/img/me.jpg">
+
+
+	<div class="col-lg-6">
+	<h1 class="text-center">About Me</h1>
 	<p>Fueled by passion, and driven to impact, I am inspired to creatively access and showcase the core essence of my projects, bringing unique perspective to actualize visionary goals. With a comprehensive background in web development, business development, business operations, and IT support, I look forward to working with you to develop solutions to your most pressing problems. Please use the links below to contact me for more information.  </p>
-</div>
+	</div>
 
 </div>
 
-</div>
 
-			</div><! --/row -->
 		</div><! --/container -->
 	</div><! --/servicewrap -->
 

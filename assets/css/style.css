@@ -1,20 +1,40 @@
+html {
+    overflow-x: hidden;
+}
 
 h1, h2, h3 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
   font-variant: normal;
   font-weight: 400;
+
 }
 
 .modal-backdrop {
     opacity:.9 !important;
+}
+
+.modal {
+  font-size: 30px;
+}
+
+a.modallinks {
+  line-height: 3;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+a.modallinks:hover {
+  color: gray;
+  font-weight: 300;
 }
 
 .menuToggle {
@@ -26,10 +46,10 @@ body {
 	text-align: center;
 	font-size: 14px;
 	color: black;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	cursor: auto;
 	background: rgba(255,255,255,0.6);
 }
 
@@ -44,34 +64,49 @@ body {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/field2.jpg) no-repeat center top;
+	background: url(../img/fielddarker2.png) no-repeat center top;
 	margin-top: 0px;
 	padding-top:0px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 800px;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
 
-#parallax {
-background: url('../img/fieldparallax.png') no-repeat center top;
+.layer img {
   margin-top: 0px;
-  padding-top:120px;
-  text-align:center;
-  background-position: center center;
-  min-height: 600px;
-  background-size: cover;
-  z-index: 2;
+  width: 105%;
+  margin-left: -20px;
+  max-height: 820px;
+
 }
 
-.mouse-bg {
-  left: 0;
-  right: 0;
+.layer {
+  position: absolute;
+  bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/*#parallax {
+  margin-top: 0px;
+  padding-top:120px;
+  padding-bottom: 150px;
+  text-align:center;
+  max-height: 100%;
+  background-size: cover;
+  z-index: 2;
+  position: absolute;
   bottom: 0;
-  top: 0;
+}
+*/
+.mouse-bg {
+  left: -10px;
+  right: -10px;
+  bottom: -20px;
+
   position: absolute;
   z-index: 2;
 }
@@ -88,14 +123,21 @@ background: url('../img/fieldparallax.png') no-repeat center top;
 }*/
 
 #logoimage {
-  width: 20%;
+  width: 255px;
   height: auto;
   margin-top: 10px;
   margin-left: 10px;
-/*  background: url('../img/katielogo.png');*/
 }
 
+
+
 /* What I Do Section */
+
+.recent {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
 .proc {
 	text-align: center;
   width: 33.333%;
@@ -105,7 +147,7 @@ background: url('../img/fieldparallax.png') no-repeat center top;
 }
 
 .skill {
-	padding: 80px 5px 5px 5px;
+	padding: 80px 10px 10px 10px;
   border: 1px solid gray;
   height: 335px;
 }
@@ -218,15 +260,27 @@ background: url('../img/fieldparallax.png') no-repeat center top;
 /*Projects/Recent Work*/
 
 .desc {
-	margin-top: 25px;
+  padding: 0 !important;
 
 }
 
+.photo{
+  max-height: 350px;
+  width: auto;
+  overflow: hidden;
+/*  display: inline-block;*/
+}
+
+
 .img-responsive {
-  height: 350px;
+  height: 33.33%;
   width: auto;
 }
 
+
+.img-responsive:hover {
+  cursor: url(../img/plus.png), auto;
+}
 
 #portfoliowrap i {
 	font-size: 50px;
@@ -239,14 +293,18 @@ background: url('../img/fieldparallax.png') no-repeat center top;
 }
 
 .portfolio {
-	background-image: url(../img/mandalatree2.jpg);
+	background-image: url(../img/placeholder2.jpg);
   background-size: cover;
 }
 
 #projectwrap {
 	margin-top: 60px;
 	margin-bottom: 130px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
+
 
 .container h1 {
 	margin-bottom: 40px;
@@ -277,14 +335,24 @@ background: url('../img/fieldparallax.png') no-repeat center top;
 .workhover:hover {
 opacity: 1;
 transition: all 1s ease;
+cursor: url(../img/plus.png), auto;
+
 }
 
-.img-responsive.workhover:hover {
+
+.worktext {
+  margin-top: 25%;
+  padding: 20px;
+  color: black !important;
+}
+
+/*.img-responsive.workhover:hover {
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(1.12);
   transform: scale(1.12);
-}
+  height: 120%;
+}*/
 
 /*---------------*/
 /***** Chico *****/
@@ -387,10 +455,10 @@ figure.effect-chico:hover p {
   opacity: 0.1;
 
 }*/
-.project:hover .overlay {
+/*.project:hover .overlay {
   opacity: 100;
   opacity: 1;
-}
+}*/
 
 
 
@@ -427,7 +495,24 @@ figure.effect-chico:hover p {
 
 /*about me box*/
 
+#me {
+  float: left;
+  width: 50%;
+}
+
+#mebox {
+  padding: 0px;
+}
+
 #aboutmebox {
+  border: 2px solid gray;
+  padding: 0px;
+
+}
+
+
+
+/*#aboutmebox {
   margin: 40px;
   border: 2px solid gray;
   text-align: justify;
@@ -438,7 +523,7 @@ figure.effect-chico:hover p {
     background: url("../img/me.jpg") no-repeat left;
   background-size: 40% auto;
   min-height: 400px;
-}
+}*/
 
 /*#aboutmebox {
   position: relative;
@@ -517,8 +602,7 @@ figure.effect-chico:hover p {
   text-align: center;
   border-top: 1px solid white;
   margin: 0px;
-  padding: 0px;
-  padding: 5% 0%;
+  padding-top: 3%;
   color: white;
   letter-spacing: 3px;
 }
@@ -540,7 +624,7 @@ figure.effect-chico:hover p {
 }*/
 
 .contact {
-	background-image: url(../img/butterfly2.jpg);
+	background-image: url(../img/footerfield.jpg);
   background-position: top;
   background-size: 100%;
 }

@@ -16,9 +16,23 @@ $('#openBtn').click(function(){
 });
 
 
-$('#parallax').mouseParallax({
-  moveFactor: 4 });
+$(".workhover").hover(function() {
+    $(this).prev().css({
+   'transform' : 'scale(1.2)',
+   'transition' : 'all 1s ease-in',
+});
+}, function() {
+    $(this).prev().css({
+      'transform' : 'scale(1)',
+      'transition' : 'all 1s ease-out',
+    });
+});
 
+// $('#parallax').mouseParallax({
+//   moveFactor: 4 });
+
+var scene = document.getElementById('parallax');
+var parallax = new Parallax(scene);
 
 
 $.stellar({
