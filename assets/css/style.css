@@ -111,16 +111,7 @@ a.modallinks:hover {
   z-index: 2;
 }
 
-/*#logo {
-  margin-top: 0px;
-  padding-top:120px;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 400px;
-  background-size: cover;
-  z-index: 3;
-  position: absolute;
-}*/
+
 
 #logoimage {
   width: 255px;
@@ -266,9 +257,9 @@ a.modallinks:hover {
 
 .photo{
   max-height: 350px;
+  min-height: 350px;
   width: auto;
   overflow: hidden;
-/*  display: inline-block;*/
 }
 
 
@@ -293,8 +284,18 @@ a.modallinks:hover {
 }
 
 .portfolio {
-	background-image: url(../img/placeholder2.jpg);
-  background-size: cover;
+	background-image: url(../img/triangles.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px !important;
+}
+
+@media screen and (max-width: 1085px) {
+.portfolio {
+  height: 500px;
+}
 }
 
 #projectwrap {
@@ -347,94 +348,6 @@ cursor: url(../img/plus.png), auto;
 }
 
 
-/*Recent Work Responsive Design*/
-
-/*@media screen and (min-width: 501px) and (max-width: 800px) {
-.proc {
-
-  float: left;
-  margin: 0px auto;
-}
-}
-*/
-
-/*.img-responsive.workhover:hover {
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
-  height: 120%;
-}*/
-
-/*---------------*/
-/***** Chico *****/
-/*---------------*/
-
-/*figure.effect-chico img {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
-}
-
-figure.effect-chico:hover img {
-  opacity: 0.5;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-chico figcaption {
-  padding: 3em;
-}
-
-figure.effect-chico figcaption::before {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  border: 1px solid #fff;
-  content: '';
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-figure.effect-chico figcaption::before,
-figure.effect-chico p {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-chico h2 {
-  padding: 20% 0 20px 0;
-}
-
-figure.effect-chico p {
-  margin: 0 auto;
-  max-width: 200px;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover p {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-@media screen and (max-width: 50em) {
-  .grid figure {
-    display: inline-block;
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-  }
-
-*/
-
-
 
 /* Gallery Configuration */
 .photo-wrapper {
@@ -451,30 +364,7 @@ figure.effect-chico:hover p {
   opacity: 0;
 }
 
-/*.project:hover .photo-wrapper {
-  background-color: gray;
-	background-image:url(../img/zoom.png);
-	background-repeat:no-repeat;
-	background-position:center;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position: relative;
-}
-.project:hover .photo {
-  opacity: 10;
-  opacity: 0.1;
-
-}*/
-/*.project:hover .overlay {
-  opacity: 100;
-  opacity: 1;
-}*/
-
-
-
-
+/
 /* Separator About - Parallax Section */
 .sep {
 	background-attachment: fixed;
@@ -484,8 +374,10 @@ figure.effect-chico:hover p {
 	position: relative;
 }
 .about {
-	background-image: url(../img/mandalatree2.jpg);
-  background-size: cover;
+/*	background-image: url(../img/mandalatree2.jpg);
+  background-size: cover;*/
+  width: 100%;
+  position: absolute;
 }
 
 
@@ -509,16 +401,15 @@ figure.effect-chico:hover p {
 
 #me {
   float: left;
-/*  width: 50%;*/
-/*margin-bottom: 10px;*/
   padding-right: 0;
   padding-left: 0;
   margin-right: 0;
   margin-left: 0;
+  width: 100%;
 }
 
 #meimgcol {
-    padding-right: 0;
+  padding-right: 0;
   padding-left: 0;
   margin-right: 0;
   margin-left: 0;
@@ -530,7 +421,7 @@ figure.effect-chico:hover p {
 
 #aboutmebox {
   border: 2px solid gray;
-    padding-right: 0;
+  padding-right: 0;
   padding-left: 0;
 
 }
@@ -546,49 +437,6 @@ figure.effect-chico:hover p {
 }
 
 
-
-/*#aboutmebox {
-  margin: 40px;
-  border: 2px solid gray;
-  text-align: justify;
-     float: none;
-     margin-left: auto;
-     margin-right: auto;
-     display: table;
-    background: url("../img/me.jpg") no-repeat left;
-  background-size: 40% auto;
-  min-height: 400px;
-}*/
-
-/*#aboutmebox {
-  position: relative;
-  float: left;
-  border: 2px solid gray;
-  background-color: #fff;
-  background: url("../img/me.jpg") no-repeat center center;
-  background-size: 100% auto;
-  width: 50%;
-  height: 100%;
-  transition: all 0.2s ease;
-  border-right: 0px;
-}
-*/
-
-/*#me {
-  border: 2px solid gray;
-
-}*/
-
-
-
-
-/* Testimonials Wrap */
-/*#testimonials {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	background-color: #f3f3f3;
-}*/
 
 
 .socialicons {
@@ -638,36 +486,19 @@ figure.effect-chico:hover p {
   border-top: 1px solid white;
   margin: 0px;
   padding-top: 3%;
+  padding-bottom: 3%;
   color: white;
   letter-spacing: 3px;
 }
-/*FOOTER*/
 
-#contactwrap {
-	background-color: white;
-	margin-top: 0px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-/*
-#contactwrap p {
-	color: #f2f2f2;
-}
-
-#contactwrap small {
-	font-size: 13px;
-}*/
 
 .contact {
 	background-image: url(../img/footerfield2.jpg);
-  background-position: top;
+  background-position: fixed;
   background-size: cover;
 }
 
-/*#contactwrap label {
-	color: #f2f2f2;
-	margin-top: 10px;
-}*/
+
 
 @media screen and (max-width: 1085px) {
 .contact {
