@@ -294,13 +294,13 @@ a.modallinks:hover {
 
 @media screen and (max-width: 1085px) {
 .portfolio {
-  height: 500px;
+  height: 500px !important;
 }
 }
 
 @media screen and (max-width: 768px) {
 .portfolio {
-  height: 100px;
+  height: 100px !important;
 }
 }
 
