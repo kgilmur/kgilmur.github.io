@@ -40,12 +40,12 @@ $.stellar({
   verticalOffset: 40
 });
 
-var logoimage = document.querySelectorAll("#logoimage");
+var logoimage = document.getElementById("logoimage");
 var headerwrap = document.getElementById("headerwrap");
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  logoimage.style.marginLeft = auto;
-  logoimage.style.marginRight = auto;
-  logoimage.style.marginTop = '50%';
+  logoimage.style.marginLeft = 'auto';
+  logoimage.style.marginRight = 'auto';
+  logoimage.style.marginBottom = '50%';
 
 } else {
   headerwrap.style.minHeight = '800px';

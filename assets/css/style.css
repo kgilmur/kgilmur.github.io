@@ -114,10 +114,14 @@ a.modallinks:hover {
   z-index: 2;
 }
 
-
+@media only screen and (orientation: landscape) {
+  #logoimage {
+    margin-bottom: 50%;
+  }
+}
 
 #logoimage {
-  width: 255px;
+  width: 225px;
   height: auto;
   margin-top: 10px;
   margin-left: 10px;
