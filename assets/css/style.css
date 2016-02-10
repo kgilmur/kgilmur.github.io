@@ -1,5 +1,7 @@
 html {
     overflow-x: hidden;
+    height:100%;
+    width:100%;
 }
 
 h1, h2, h3 {
@@ -59,9 +61,7 @@ a.modallinks:hover {
 }
 
 
-/* ==========================================================================
-   Wrap Sections
-   ========================================================================== */
+/*Sections*/
 
 #headerwrap {
 	background: url(../img/sunlight-field3.jpg) no-repeat center top;
@@ -69,12 +69,15 @@ a.modallinks:hover {
 	padding-top:0px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
-	min-height: 800px;
+	background-position: center right;
+	/*min-height: 800px;*/
   background-size: cover;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
+
+
 
 .layer img {
   margin-top: 0px;
