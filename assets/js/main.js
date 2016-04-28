@@ -10,11 +10,44 @@ $(function(){
 
 
 $('#openBtn').click(function(){
-
   $('#myModal').modal({show:true});
-
 });
 
+var demoVideo = document.getElementById("demo-video");
+$('#demo-modal-link').click(function(){
+  $('#demo-modal').modal('show');
+  demoVideo.play();
+});
+
+var amexVideo = document.getElementById("amex-video");
+$('#amex-modal-link').click(function(){
+  $('#amex-modal').modal('show');
+  amexVideo.play();
+});
+
+var hardcoreVideo = document.getElementById("hardcore-video");
+$('#hardcore-modal-link').click(function(){
+  $('#hardcore-modal').modal('show');
+  hardcoreVideo.play();
+});
+
+var hamburgerVideo = document.getElementById("hamburger-video");
+$('#hamburger-modal-link').click(function(){
+  $('#hamburger-modal').modal('show');
+  hamburgerVideo.play();
+});
+
+var idahoanVideo = document.getElementById("idahoan-video");
+$('#idahoan-modal-link').click(function(){
+  $('#idahoan-modal').modal('show');
+  idahoanVideo.play();
+});
+
+var midasVideo = document.getElementById("midas-video");
+$('#midas-modal-link').click(function(){
+  $('#midas-modal').modal('show');
+  midasVideo.play();
+});
 
 $(".workhover").hover(function() {
     $(this).prev().css({
