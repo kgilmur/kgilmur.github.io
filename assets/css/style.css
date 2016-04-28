@@ -1,7 +1,9 @@
+/*General Styles*/
+
 html {
-    overflow-x: hidden;
-    height:100%;
-    width:100%;
+  overflow-x: hidden;
+  height:100%;
+  width:100%;
 }
 
 h1, h2, h3 {
@@ -16,11 +18,12 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-
 }
 
+/*Modals*/
+
 .modal-backdrop {
-    opacity:.9 !important;
+  opacity:.9 !important;
 }
 
 .modal {
@@ -60,8 +63,7 @@ a.modallinks:hover {
 	background: rgba(255,255,255,.8);
 }
 
-
-/*Sections*/
+/*Overall Sections*/
 
 #headerwrap {
 	background: url(../img/sunlight-field3.jpg) no-repeat center top;
@@ -77,14 +79,11 @@ a.modallinks:hover {
   height: 100vh;
 }
 
-
-
 .layer img {
   margin-top: 0px;
   width: 105%;
   margin-left: -20px;
   max-height: 820px;
-
 }
 
 .layer {
@@ -105,11 +104,11 @@ a.modallinks:hover {
   bottom: 0;
 }
 */
+
 .mouse-bg {
   left: -10px;
   right: -10px;
   bottom: -20px;
-
   position: absolute;
   z-index: 2;
 }
@@ -132,7 +131,6 @@ a.modallinks:hover {
   margin-top: 10px;
   margin-left: 10px;
 }
-
 
 
 /* What I Do Section */
@@ -184,11 +182,9 @@ a.modallinks:hover {
   border-right: 1px solid white;
 }
 
-
 #whatidocontainer {
   text-align: center;
   margin: 180px auto;
-
 }
 
 #whatidocontainer h3 {
@@ -202,10 +198,11 @@ a.modallinks:hover {
   position: relative;
 }
 
-/*What I do Responsive Design*/
+
+/*What I Do Responsive Design*/
 
 @media screen and (max-width: 500px) {
-   .proc {
+  .proc {
     float: none;
     margin-right:0;
     width:auto;
@@ -214,59 +211,58 @@ a.modallinks:hover {
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
-.proc {
-  width: 50%;
-  float: left;
-  margin: 0px auto;
+  .proc {
+    width: 50%;
+    float: left;
+    margin: 0px auto;
+  }
 }
-}
-
 
 @media screen and (min-width: 501px) and (max-width: 800px){
-.skill.one {
-  border-right: 0px;
-  border-top: 0px;
-  border-left: 0px;
-}
-}
-
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-.skill.two {
-  border-right: 0px;
-  border-top: 0px;
-}
+  .skill.one {
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
-.proc.three {
-  border: 0px;
-}
-}
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-.proc.four {
-  border-top: 0px;
-  border-left: 1px solid gray;
-  border-bottom: 0px;
-  border-right: 0px;
- }
+  .skill.two {
+    border-right: 0px;
+    border-top: 0px;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
-.proc.five {
-  border-left: 0px;
-  border-bottom: 0px;
-  border-right: 0px;
+  .proc.three {
+    border: 0px;
+  }
 }
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .proc.four {
+    border-top: 0px;
+    border-left: 1px solid gray;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
 }
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .proc.five {
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+}
+
 
 /*Projects/Recent Work*/
 
 video {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
+  width: auto;
+  height: 100%;
+  max-height: 100%;
 }
 
 .RM-units.modal {
@@ -296,7 +292,6 @@ video {
 
 .desc {
   padding: 0 !important;
-
 }
 
 .photo{
@@ -306,12 +301,10 @@ video {
   overflow: hidden;
 }
 
-
 .work {
   width: 100%;
   height: 100%;
 }
-
 
 .work:hover {
   cursor: url(../img/plus.png), auto;
@@ -320,7 +313,6 @@ video {
 .contact i {
 	font-size: 50px;
 }
-
 
 #portfoliowrap .proc:hover {
 	background-color: #eee;
@@ -337,15 +329,15 @@ video {
 }
 
 @media screen and (max-width: 1085px) {
-.portfolio {
-  height: 500px !important;
-}
+  .portfolio {
+    height: 500px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-.portfolio {
-  height: 100px !important;
-}
+  .portfolio {
+    height: 100px !important;
+  }
 }
 
 #projectwrap {
@@ -355,12 +347,9 @@ video {
   margin-left: 10px;
 }
 
-
-
 .container h1 {
 	margin-bottom: 40px;
 }
-
 
 .workhover {
   position: absolute;
@@ -387,9 +376,7 @@ video {
 opacity: 1;
 transition: all 1s ease;
 cursor: url(../img/plus.png), auto;
-
 }
-
 
 .worktext {
   margin-top: 25%;
@@ -398,15 +385,15 @@ cursor: url(../img/plus.png), auto;
 }
 
 
-
 /* Gallery Configuration */
+
 .photo-wrapper {
   display: block;
   position: relative;
   overflow: hidden;
   background-color: #2f2f2f;
-
 }
+
 .project .overlay {
   position: absolute;
   text-align: center;
@@ -414,8 +401,9 @@ cursor: url(../img/plus.png), auto;
   opacity: 0;
 }
 
-/
+
 /* Separator About - Parallax Section */
+
 .sep {
 	background-attachment: fixed;
 	background-position: 50% 0;
@@ -423,6 +411,7 @@ cursor: url(../img/plus.png), auto;
 	height: 450px;
 	position: relative;
 }
+
 .about {
 /*	background-image: url(../img/mandalatree2.jpg);
   background-size: cover;*/
@@ -431,7 +420,8 @@ cursor: url(../img/plus.png), auto;
 }
 
 
-/* Service Wrap */
+/* Service Wrap/Section */
+
 #servicewrap {
 	display: block;
 	margin-top: 80px;
@@ -444,10 +434,7 @@ cursor: url(../img/plus.png), auto;
 	margin-bottom: 20px;
 }
 
-
-
-
-/*about me box*/
+/*About Me Box*/
 
 #me {
   float: left;
@@ -473,7 +460,6 @@ cursor: url(../img/plus.png), auto;
   border: 2px solid gray;
   padding-right: 0;
   padding-left: 0;
-
 }
 
 #aboutmeheader {
@@ -483,11 +469,9 @@ cursor: url(../img/plus.png), auto;
 
 #aboutmetext {
   text-align: justify;
-
 }
 
-
-
+/*Contact*/
 
 .socialicons {
   padding: 10% 0%;
@@ -498,38 +482,31 @@ cursor: url(../img/plus.png), auto;
   font-size: 15px;
 }
 
-
 .socialicons i {
   margin-left: 40px;
   margin-right: 40px;
   color: white;
-
 }
 
 .fa-envelope-o:hover::before {
   margin-right: 2.5px;
   margin-left: 2.5px;
-
 }
 
 .fa-linkedin:hover::before {
   margin-right: 2.5px;
   margin-left: 2.5px;
-
 }
 
 .fa-github:hover::before {
   margin-right: 2.5px;
   margin-left: 2.5px;
-
 }
 
 .fa-twitter:hover::before {
   margin-right: 2.5px;
   margin-left: 2.5px;
-
 }
-
 
 .copyright {
   text-align: center;
@@ -541,18 +518,15 @@ cursor: url(../img/plus.png), auto;
   letter-spacing: 3px;
 }
 
-
 .contact {
 	background-image: url(../img/footerfield2.jpg);
   background-position: fixed;
   background-size: cover;
 }
 
-
-
 @media screen and (max-width: 1085px) {
-.contact {
-  background-size: cover;
-}
+  .contact {
+    background-size: cover;
+  }
 }
 
