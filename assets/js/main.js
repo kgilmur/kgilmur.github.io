@@ -40,6 +40,24 @@ $(function(){
     midasVideo.play();
   });
 
+  var fluzoneVideo = document.getElementById("fluzone-video");
+  $('#fluzone-modal-link').click(function(){
+    $('#fluzone-modal').modal('show');
+    fluzoneVideo.play();
+  });
+
+  var directTvVideo = document.getElementById("direct-tv-video");
+  $('#direct-tv-modal-link').click(function(){
+    $('#direct-tv-modal').modal('show');
+    directTvVideo.play();
+  });
+
+  var cbsFantasyVideo = document.getElementById("cbs-fantasy-video");
+  $('#cbs-fantasy-modal-link').click(function(){
+    $('#cbs-fantasy-modal').modal('show');
+    cbsFantasyVideo.play();
+  });
+
   $(".workhover").hover(function() {
     $(this).prev().css({
      'transform' : 'scale(1.2)',
