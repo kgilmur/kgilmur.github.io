@@ -325,7 +325,7 @@ video {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 700px !important;
+  height: 400px !important;
 }
 
 @media screen and (max-width: 1085px) {
